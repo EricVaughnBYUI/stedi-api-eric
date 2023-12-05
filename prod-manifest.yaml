@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: prod-stedi-eric
-          image: gcr.io/cubs-consulting/stedi # This image needs to refer to the NEW Artifact registry repositorry
+          image: us-docker.pkg.dev/byui-scrum-team-11am-mst/eric-api/eric-stedi-api:latest # This image needs to refer to the NEW Artifact registry repositorry
           env:
             - name: REDIS_PASSWORD
               valueFrom:
@@ -90,5 +90,5 @@ metadata:
   name: prod-stedi-eric-certificate # This needs to match line 68
 spec:
   domains:
-    - eric.cit262.com # This is a DNS record that has not been created yet - we need to create that first
+    - ERIC_VAUGHN.hearngesin.co.za # This is a DNS record that has not been created yet - we need to create that first
     
